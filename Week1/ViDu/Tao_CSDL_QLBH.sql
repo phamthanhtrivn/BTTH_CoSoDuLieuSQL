@@ -1,0 +1,19 @@
+CREATE DATABASE QLBH
+ON PRIMARY 
+( NAME = QLBH_data1,
+	FILENAME = 'D:\HK1(2023-2024)\HeCoSoDuLieu\ThucHanh\Week1\ViDu\QLBH_data1.mdf',
+	SIZE = 10, MAXSIZE = 50, FILEGROWTH = 15%),
+( NAME = QLBH_data2,
+	FILENAME = 'D:\HK1(2023-2024)\HeCoSoDuLieu\ThucHanh\Week1\ViDu\QLBH_data2.ndf',
+	SIZE = 10, MAXSIZE = 50, FILEGROWTH = 15%),
+FILEGROUP QLBHGroup1
+( NAME = QLBH_data3,
+	FILENAME = 'D:\HK1(2023-2024)\HeCoSoDuLieu\ThucHanh\Week1\ViDu\QLBH_data3.ndf',
+	SIZE = 10, MAXSIZE = 50, FILEGROWTH = 5),
+( NAME = QLBH_data4,
+	FILENAME = 'D:\HK1(2023-2024)\HeCoSoDuLieu\ThucHanh\Week1\ViDu\QLBH_data4.ndf',
+	SIZE = 10, MAXSIZE = 50, FILEGROWTH = 5)
+LOG ON
+( NAME = 'QLHB_log',
+	FILENAME = 'D:\HK1(2023-2024)\HeCoSoDuLieu\ThucHanh\Week1\ViDu\QLBH_log.ldf',
+	SIZE = 5MB, MAXSIZE = 25MB, FILEGROWTH = 5MB)

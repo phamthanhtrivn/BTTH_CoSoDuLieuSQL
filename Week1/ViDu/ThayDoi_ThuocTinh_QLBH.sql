@@ -1,0 +1,2 @@
+ALTER DATABASE QLBH
+SET Read_only
